@@ -4,22 +4,22 @@
 int main()
 {
     int n[999];
-    int sla = 1;
-    int i=0;
-    int b=0;
-    int d=0;
-    while (sla>0){
+    int insere = 1;
+    int tam=0;
+    int busca=0;
+    int repetiu=0;
+    while (insere>0){
         printf("Digite um valor: ");
         scanf("%d", &sla);
-        n[i] = sla;
-        i++;
+        n[tam] = sla;
+        tam++;
     }
     printf("Digite um valor para a busca: ");
-    scanf("%d", &b);
-    for(int c = 0; c<i; c++){
-        if (b == n[c]){
-            d++;
+    scanf("%d", &busca);
+    for(int cont = 0; cont<tam; cont++){
+        if (busca == n[cont]){
+            repetiu++;
         }
     }
-    printf("O valor %d foi digitado %d vezes", b, d);
+    printf("O valor %d foi digitado %d vezes", busca, repetiu);
 }
